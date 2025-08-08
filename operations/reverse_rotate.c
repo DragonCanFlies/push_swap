@@ -1,16 +1,16 @@
 #include "push_swap.h"
 
-// void	rra(t_list **stack_a)
+// void	rra(t_list *stack_a)
 // {
 // 	reverse_rotate(stack_a);
 // }
 
-// void	rrb(t_list **stack_b)
+// void	rrb(t_list *stack_b)
 // {
 // 	reverse_rotate(stack_b);
 // }
 
-// void	rrr(t_list **stack_a, t_list **stack_b)
+// void	rrr(t_list *stack_a, t_list *stack_b)
 // {
 // 	reverse_rotate(stack_a);
 // 	reverse_rotate(stack_b);

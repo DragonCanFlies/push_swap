@@ -29,11 +29,11 @@ int main(int argc, char **argv)
     pb(&stack_a, &stack_b);
     pb(&stack_a, &stack_b);
     print_stacks(&stack_a, &stack_b);
-    sa(&stack_a);
+    ra(&stack_a);
     print_stacks(&stack_a, &stack_b);
-    sb(&stack_b);
+    rb(&stack_b);
     print_stacks(&stack_a, &stack_b);
-    ss(&stack_a, &stack_b);
+    rr(&stack_a, &stack_b);
     print_stacks(&stack_a, &stack_b);
 
     free_stack(&stack_a);

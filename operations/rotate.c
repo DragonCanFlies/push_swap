@@ -13,38 +13,40 @@ last node points to head
 stack_a now points to second node
 former head now points to NULL
 */
-// void    ra(t_list **stack_a)
-// {
-// 	printf("ra\n");
-// 	rotate(stack_a);
-// }
+void    ra(t_list *stack_a)
+{
+	printf("ra\n");
+	rotate(stack_a);
+}
 
-// void    rb(t_list **stack_b)
-// {
-// 	printf("rb\n");
-// 	rotate(stack_b);
-// }
+void    rb(t_list *stack_b)
+{
+	printf("rb\n");
+	rotate(stack_b);
+}
 
 
-// void    rr(t_list **stack_a, t_list **stack_b)
-// {
-// 	printf("rr\n");
-// 	rotate(stack_a);
-// 	rotate(stack_b);
-// }
+void    rr(t_list *stack_a, t_list *stack_b)
+{
+	printf("rr\n");
+	rotate(stack_a);
+	rotate(stack_b);
+}
 
-// void    rotate(t_list **stack)
-// {
-// 	t_list *node;
-// 	t_list *former_head;
+void    rotate(t_list *stack)
+{
+    t_node *walker;
+    t_node *former_head;
 
-// 	if (!*stack || (*stack)->next == NULL)
-// 	    return ;
-// 	node = *stack;
-// 	while (node->next)
-// 	    node = node->next;
-// 	node->next = *stack;
-// 	former_head = *stack;
-// 	*stack = (*stack)->next;
-// 	former_head->next = NULL;
-// }
+    if (!stack || !stack->head || !stack->head->next)
+    {
+        return ;
+    }
+	walker = stack->head;
+    while (walker->next)
+        walker = walker->next;
+    walker->next = stack->head;
+    former_head = stack->head;
+    stack->head = stack->head->next;
+    former_head->next = NULL;
+}
