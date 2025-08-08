@@ -49,7 +49,7 @@ void    init_stack(t_list *stack)
 
 int build_stack_a(t_list *stack_a, int argc, char **argv)
 {
-    unsigned int    i;
+    int    i;
     int             is_input_valid;
     int             number;
 

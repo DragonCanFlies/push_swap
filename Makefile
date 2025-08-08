@@ -6,7 +6,7 @@
 #    By: latabagl <latabagl@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/04 13:53:47 by latabagl          #+#    #+#              #
-#    Updated: 2025/08/08 23:29:45 by latabagl         ###   ########.fr        #
+#    Updated: 2025/08/08 23:54:43 by latabagl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,7 @@ SRC = push_swap.c \
       utils/parse_arguments.c \
       utils/push_swap_utils.c \
       utils/is_sorted.c
-SRC_DIR = src
-OBJ_DIR = obj
-OBJECTS = $(SRC:src/%.c=obj/%.o)
+OBJECTS = $(SRC:%.c=obj/%.o)
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
 INCLUDES = -I$(LIBFT_DIR) -Iincludes
@@ -37,7 +35,7 @@ $(NAME): $(OBJECTS)
 		$(MAKE) -C $(LIBFT_DIR)
 		$(CC) $(FLAGS) $(OBJECTS) $(LIBFT) -o $(NAME)
 		
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER)
+obj/%.o: %.c $(HEADER)
 		mkdir -p $(dir $@)
 		$(CC) $(FLAGS) $(INCLUDES) -c $< -o $@
 
