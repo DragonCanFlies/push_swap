@@ -24,16 +24,10 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	print_stacks(&stack_a, &stack_b);
-    pb(&stack_a, &stack_b);
-    pb(&stack_a, &stack_b);
-    pb(&stack_a, &stack_b);
-    print_stacks(&stack_a, &stack_b);
-    rra(&stack_a);
-    print_stacks(&stack_a, &stack_b);
-    rrb(&stack_b);
-    print_stacks(&stack_a, &stack_b);
-    rrr(&stack_a, &stack_b);
+	if (is_sorted(&stack_a))
+        printf("stack_a is sorted");
+    else
+        printf("NOT sorted");
     print_stacks(&stack_a, &stack_b);
 
     free_stack(&stack_a);

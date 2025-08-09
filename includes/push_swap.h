@@ -6,7 +6,7 @@
 /*   By: latabagl <latabagl@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 13:49:33 by latabagl          #+#    #+#             */
-/*   Updated: 2025/08/09 00:19:21 by latabagl         ###   ########.fr       */
+/*   Updated: 2025/08/09 11:08:45 by latabagl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,7 @@ void	sa(t_list *stack_a);
 void	sb(t_list *stack_b);
 void	ss(t_list *stack_a, t_list *stack_b);
 void	swap(t_list *stack);
+
+int     is_sorted(t_list *stack);
 
 #endif
