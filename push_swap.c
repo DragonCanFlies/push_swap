@@ -24,10 +24,8 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	if (is_sorted(&stack_a))
-        printf("stack_a is sorted");
-    else
-        printf("NOT sorted");
+	if (!is_sorted(&stack_a) && stack_a.size <= 5)
+        small_sort(&stack_a);
     print_stacks(&stack_a, &stack_b);
 
     free_stack(&stack_a);

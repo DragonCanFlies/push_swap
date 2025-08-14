@@ -6,7 +6,7 @@
 #    By: latabagl <latabagl@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/04 13:53:47 by latabagl          #+#    #+#              #
-#    Updated: 2025/08/08 23:54:43 by latabagl         ###   ########.fr        #
+#    Updated: 2025/08/09 11:13:39 by latabagl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = push_swap.c \
       operations/swap.c \
       operations/rotate.c \
       operations/reverse_rotate.c \
-      algo/sort2.c \
+      algo/small_sort.c \
       algo/selection_sort.c \
       utils/parse_arguments.c \
       utils/push_swap_utils.c \

@@ -6,7 +6,7 @@
 /*   By: latabagl <latabagl@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 13:49:33 by latabagl          #+#    #+#             */
-/*   Updated: 2025/08/09 11:08:45 by latabagl         ###   ########.fr       */
+/*   Updated: 2025/08/10 09:34:01 by latabagl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,12 @@ void	ss(t_list *stack_a, t_list *stack_b);
 void	swap(t_list *stack);
 
 int     is_sorted(t_list *stack);
+void	small_sort(t_list *stack);
+void	sort2(t_list *stack);
+void	sort3(t_list *stack);
+void	sort4(t_list *stack);
+void	sort5(t_list *stack);
+
+int     find_lowest_number(t_list *stack);
 
 #endif
